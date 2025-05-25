@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Inputs'
+name: 'Build Inputs Custom'
 on:
   workflow_dispatch:
     inputs:
@@ -18,33 +18,33 @@ on:
         default: 'default'
         type: choice
         options:
-        - "default"
-        - "AZERTY"
-        - "BEAKL15"
-        - "Colemak"
-        - "ColemakDHK"
-        - "Dvorak"
-        - "Halmak"
-        - "QWERTY"
-        - "QWERTZ"
-        - "Workman"
+          - 'default'
+          - 'AZERTY'
+          - 'BEAKL15'
+          - 'Colemak'
+          - 'ColemakDHK'
+          - 'Dvorak'
+          - 'Halmak'
+          - 'QWERTY'
+          - 'QWERTZ'
+          - 'Workman'
       nav:
         description: 'nav'
         required: false
         default: 'default'
         type: choice
         options:
-        - "default"
-        - "invertedT"
-        - "vi"
+          - 'default'
+          - 'invertedT'
+          - 'vi'
       layers:
         description: 'layers'
         required: false
         default: 'default'
         type: choice
         options:
-        - "default"
-        - "flip"
+          - 'default'
+          - 'flip'
       mapping:
         description: 'mapping'
         required: false
